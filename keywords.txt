@@ -1,0 +1,20 @@
+#######################################
+# Syntax Coloring Map For GyverKey
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+AnalogKeyMin	KEYWORD1
+AnalogKey	KEYWORD1
+MatrixKeyMin	KEYWORD1
+MatrixKey	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
