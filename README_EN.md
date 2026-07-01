@@ -43,8 +43,8 @@ Initialization:
 MatrixKeyMin(const uint8_t* rowPins, uint8_t rows, const uint8_t* colPins, uint8_t cols, uint8_t mode = INPUT_PULLUP);
 MatrixKey(const uint8_t* rowPins, uint8_t rows, const uint8_t* colPins, uint8_t cols, uint8_t mode = INPUT_PULLUP);
 
-AnalogKeyMin(const int16_t* sigs, uint8_t len, uint8_t window = 15);
-AnalogKey(const int16_t* sigs, uint8_t len, uint8_t window = 15);
+AnalogKeyMin(uint8_t pin, const int16_t* sigs, uint8_t len, uint8_t window = 20);
+AnalogKey(uint8_t pin, const int16_t* sigs, uint8_t len, uint8_t window = 20);
 ```
 
 Common methods for all classes:
@@ -66,7 +66,7 @@ char key(const char* keys);
 Additional for analog:
 
 ```cpp
-// set the signal window (default 15)
+// set the signal window width
 void setWindow(uint8_t window);
 ```
 
